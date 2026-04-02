@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Walden Ekth — Prodige & Génie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">Walden <span>Ekth</span></h1>
+        <nav class="nav">
+          <a href="#about">À propos</a>
+          <a href="#works">Réalisations</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h2>Prodige. Innovateur. Visionnaire.</h2>
+            <p class="lead">Walden Ekth façonne des idées apparemment impossibles en réalisations tangibles. Talent précoce, pensée profonde, exécution nette.</p>
+            <p class="meta">Spécialités : Mathématiques, Algorithmique, Design d'expérience, Projets inter-disciplinaires</p>
+            <div class="hero-actions">
+              <a href="#works" class="btn">Voir les réalisations</a>
+              <a href="#contact" class="btn ghost">Engager Walden</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" class="portrait">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="#9b5cf6"/>
+                  <stop offset="1" stop-color="#3dd7c6"/>
+                </linearGradient>
+              </defs>
+              <rect rx="16" width="200" height="260" fill="url(#g)" />
+              <g fill="#fff" opacity="0.08">
+                <circle cx="60" cy="70" r="18" />
+                <circle cx="140" cy="120" r="10" />
+                <circle cx="90" cy="180" r="20" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h3>À propos de Walden</h3>
+        <p>Walden Ekth est un esprit brillant qui combine rigueur scientifique et sens esthétique. Depuis son jeune âge, il a démontré une capacité hors du commun à résoudre des problèmes complexes et à créer des solutions élégantes et pratiques.</p>
+        <ul class="bullets">
+          <li><strong>Esprit analytique</strong> — aptitude pour la modélisation et l'optimisation.</li>
+          <li><strong>Pensée créative</strong> — design et expériences utilisateur remarquables.</li>
+          <li><strong>Leadership technique</strong> — dirige des équipes vers des résultats concrets.</li>
+        </ul>
+      </section>
+
+      <section id="works" class="container works">
+        <h3>Réalisations marquantes</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>Algorithme d'optimisation X</h4>
+            <p>Nouvelle approche qui réduit le coût de calcul de 40% sur des jeux de données réels.</p>
+          </article>
+          <article class="card">
+            <h4>Interface immersive Y</h4>
+            <p>Prototype d'UX combinant interactions naturelles et visualisations dynamiques.</p>
+          </article>
+          <article class="card">
+            <h4>Projet interdisciplinaire Z</h4>
+            <p>Collaboration entre artistes et ingénieurs pour traduire des données en formes esthétiques.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="container gallery">
+        <h3>Galerie</h3>
+        <p class="muted">Vignettes et aperçus des travaux — cliquez pour agrandir (placeholder).</p>
+        <div class="masonry">
+          <div class="thumb" style="background:linear-gradient(135deg,#9b5cf6,#3dd7c6)"> </div>
+          <div class="thumb" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"> </div>
+          <div class="thumb" style="background:linear-gradient(135deg,#06b6d4,#7c3aed)"> </div>
+          <div class="thumb" style="background:linear-gradient(135deg,#10b981,#06b6d4)"> </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h3>Contact</h3>
+        <p>Pour collaborations, conférences ou opportunités : <a href="mailto:walden@example.com">walden@example.com</a></p>
+        <p class="small muted">Vous pouvez cloner ce dossier et ouvrir `index.html` pour voir la page localement.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Walden Ekth — Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script>
+      // small DOM touches
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
